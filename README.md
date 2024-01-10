@@ -1,4 +1,4 @@
-# ETL-MySQL-MongoDB
+# Extract-Transform-Load (ETL) from MySQL to MongoDB
 Attempt to migrate Hierarchical data to NoSQL which involves: 
 (1) Queries to extract data from Azure Database for MySQL to storage blob, 
 (2) Azure Data Factory Pipelines to transform SQL into document, 
@@ -10,15 +10,14 @@ Attempt to migrate Hierarchical data to NoSQL which involves:
 ## Configuration Procedures 
 1. [[Create a MySQL]]
 2. Import [Northwind.sql](https://github.com/harryho/db-samples/blob/master/mysql/northwind.sql)
-	![[capture-20240107-2022 1.png]]
   Credit: harryho - Northwind sample database for MySql
 3. Configure Azure Data Factory (Library included in this repo)
 
-##Source Data Structure - ER Diagram
+## Source Data Structure - ER Diagram
 ![image](https://github.com/liam-ng/ETL-MySQL-MongoDB/assets/90180576/dcacba7f-2340-46f0-840e-35f90d58be41)
 Only Primary Keys and Foreign Keys are shown.
 
-##Planned Schema Design
+## Planned Schema Design
 ![image](https://github.com/liam-ng/ETL-MySQL-MongoDB/assets/90180576/1ad13aed-8417-41ca-a46c-2684ab8feef6)
 
 **Good**:
